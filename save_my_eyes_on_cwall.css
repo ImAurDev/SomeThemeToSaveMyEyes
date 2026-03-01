@@ -40,7 +40,7 @@
             --accent-hover: #f5c2e7;
             --accent-soft: rgba(203, 166, 247, 0.15);
             --glass-bg: rgba(30, 30, 46, 0.75);
-            --glass-border: rgba(255, 255, 255, 0.08); 
+            --glass-border: rgba(255, 255, 255, 0.08);
             --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
     }
@@ -89,6 +89,14 @@
 
     button {
         border-radius: var(--radius) !important;
+    }
+
+    button:hover {
+        background: var(--bg-tertiary) !important;
+        border-color: var(--accent) !important;
+        color: var(--accent) !important;
+        transform: translateY(-1px) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
     }
 
     .content-text {
@@ -170,5 +178,32 @@
 
     .view-reply {
         color: var(--text-secondary) !important;
+    }
+
+    .reply_button,
+    button[name="reply_comment"] {
+        background: var(--accent) !important;
+    }
+
+    .pagination .active {
+        background: var(--accent) !important;
+    }
+
+    .reply_button:hover,
+    button[name="reply_comment"]:hover,
+    .pagination a:hover {
+        background: var(--bg-tertiary) !important;
+        border-color: var(--glass-border) !important;
+        color: var(--accent) !important;
+        transform: translateY(-1px) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .message p strong {
+        color: var(--text-tertiary) !important;
+    }
+
+    .message p {
+        color: var(--text-primary) !important;
     }
 }
