@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Cwall主题
-// @namespace    https://github.com/ImAurDev/SaveMyEves
+// @namespace    https://github.com/ImAurDev/SomeThemeToSaveMyEyes
 // @version      2026-03-01
 // @description  给Cwall做的主题
 // @author       ImAur
