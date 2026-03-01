@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           code.xueersi.com
 @version        1.0.0
-@namespace      Aur/XesTheme
+@namespace      https://github.com/ImAurDev/XesTheme
 @description    一个学而思编程社区的样式
 @author         ImAur
 ==/UserStyle== */
@@ -720,3 +720,4 @@
         color: var(--text-primary) !important;
     }
 }
+ 
