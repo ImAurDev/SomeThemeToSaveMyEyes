@@ -1,0 +1,174 @@
+/* ==UserStyle==
+@name           c4.cwall.xyz
+@namespace      https://github.com/ImAurDev/SaveMyEves
+@version        1.0.0
+@description    给Cwall做的主题
+@author         ImAur
+==/UserStyle== */
+
+@-moz-document url-prefix("https://c4.cwall.xyz/")
+{
+    :root {
+        --bg-primary: #f8fafc;
+        --bg-secondary: rgb(241, 241, 241);
+        --bg-tertiary: rgba(241, 245, 249);
+        --text-primary: #0f172a;
+        --text-secondary: #475569;
+        --text-tertiary: #94a3b8;
+        --accent: #3b82f6;
+        --accent-hover: #2563eb;
+        --accent-soft: rgba(59, 130, 246, 0.1);
+        --danger: #ef4444;
+        --success: #10b981;
+        --warning: #f59e0b;
+        --glass-bg: rgba(255, 255, 255, 0.75);
+        --glass-border: rgba(255, 255, 255, 0.5);
+        --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+        --radius: 10px;
+        --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: rgb(27, 37, 53);
+            --bg-tertiary: rgb(25, 31, 46);
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-tertiary: #64748b;
+            --accent: #60a5fa;
+            --accent-hover: #3b82f6;
+            --accent-soft: rgba(96, 165, 250, 0.15);
+            --glass-bg: rgba(30, 41, 59, 0.75);
+            --glass-border: rgba(255, 255, 255, 0.08); 
+            --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Maple Mono CN";
+        transition:
+            background-color var(--transition),
+            color var(--transition),
+            border-color var(--transition);
+    }
+
+    body,
+    .main-container {
+        background: var(--bg-tertiary) !important;
+        color: var(--text-primary) !important;
+        line-height: 1.6;
+        min-height: 100vh;
+    }
+
+    body > aside.sidebar {
+        background: var(--bg-primary) !important;
+    }
+
+    iframe aside.sidebar {
+        background: var(--bg-secondary) !important;
+        border-right: 1px solid var(--glass-border) !important;
+    }
+
+    .copyright {
+        color: var(--text-secondary) !important;
+    }
+
+    .content-item,
+    .nr-item,
+    .message,
+    .comment-item,
+    .topic-item {
+        background: var(--bg-secondary) !important;
+        border: 1px solid var(--glass-border) !important;
+        border-radius: var(--radius) !important;
+    }
+
+    button {
+        border-radius: var(--radius) !important;
+    }
+
+    .content-text {
+        color: var(--text-primary) !important;
+    }
+
+    .username,
+    .comment-user {
+        color: var(--text-secondary) !important;
+    }
+
+    .post-time,
+    .comment-time {
+        color: var(--text-tertiary) !important;
+    }
+
+    .action-btns {
+        border-top: none !important;
+    }
+
+    .comment-input,
+    #content-input,
+    #topic-input,
+    input[placeholder="搜索新鲜事、用户或话题..."] {
+        background: var(--bg-secondary) !important;
+        color: var(--text-primary) !important;
+        border: 1px solid var(--glass-border) !important;
+    }
+
+    .topic-name {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+    }
+
+    .topic-item {
+        border-radius: var(--radius) !important;
+    }
+
+    .nav-bar {
+        background: var(--bg-primary) !important;
+        color: var(--text-secondary) !important;
+    }
+
+    .nav-bar .active {
+        color: var(--text-primary) !important;
+        background: var(--bg-tertiary) !important;
+    }
+
+    .nav-bar a {
+        padding: 6px 14px;
+        color: var(--text-secondary) !important;
+    }
+
+    .nav-bar a:hover {
+        color: var(--text-primary) !important;
+        background: var(--bg-tertiary) !important;
+    }
+
+    .message pre {
+        background: var(--bg-tertiary) !important;
+    }
+
+    .scrolled {
+        all: unset;
+    }
+
+    .message p a {
+        color: var(--text-secondary) !important;
+        border-bottom: none !important;
+        transition: color var(--transition) !important;
+    }
+
+    .message p a:hover {
+        color: var(--text-primary) !important;
+    }
+
+    .view-reply {
+        color: var(--text-secondary) !important;
+    }
+}
